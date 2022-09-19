@@ -51,10 +51,6 @@ public class Service {
         $(submitButton).click();
     }
 
-    public void assertForm() {
-        $(thankYOu).shouldHave(Condition.text("Thanks for submitting the form"));
-    }
-
     private void fillName() {
         $(name).setValue(firstName);
     }

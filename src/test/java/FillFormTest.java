@@ -14,7 +14,6 @@ public class FillFormTest extends BaseTest {
         open("https://demoqa.com/automation-practice-form");
         service.fillForm();
         service.clickButton();
-        service.assertForm();
         attachments.addVideo();
     }
 
