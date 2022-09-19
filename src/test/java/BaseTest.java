@@ -14,8 +14,8 @@ public class BaseTest {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
-//        Configuration.browserCapabilities = capabilities;
+        Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = "1920x1080";
-        //       Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 }

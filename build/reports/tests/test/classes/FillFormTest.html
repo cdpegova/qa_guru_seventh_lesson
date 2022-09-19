@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.446s</div>
+<div class="counter">11.662s</div>
 <p>duration</p>
 </div>
 </td>
@@ -77,16 +77,16 @@
 <h3 class="failures">fillFormTest()</h3>
 <span class="code">
 <pre>Invalid element state [#submit]: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1081, 775). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-Screenshot: file:/C:/Users/grimm/IdeaProjects/qa_guru_seventh_lesson2/build/reports/tests/1663579767434.0.png
-Page source: file:/C:/Users/grimm/IdeaProjects/qa_guru_seventh_lesson2/build/reports/tests/1663579767434.0.html
+Screenshot: file:/C:/Users/grimm/IdeaProjects/qa_guru_seventh_lesson2/build/reports/tests/1663580535112.0.png
+Page source: file:/C:/Users/grimm/IdeaProjects/qa_guru_seventh_lesson2/build/reports/tests/1663580535112.0.html
 Timeout: 4 s.
 Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1081, 775). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
 	at app//com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:151)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:81)
-	at app//com.sun.proxy.$Proxy13.click(Unknown Source)
+	at app//com.sun.proxy.$Proxy12.click(Unknown Source)
 	at app//pages.Service.clickButton(Service.java:51)
-	at app//FillFormTest.fillFormTest(FillFormTest.java:20)
+	at app//FillFormTest.fillFormTest(FillFormTest.java:16)
 	at java.base@15.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@15.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base@15.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,10 +182,10 @@ Caused by: org.openqa.selenium.ElementClickInterceptedException: element click i
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ZUZU', ip: '192.168.1.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4245e6f59799fa7afb843d76e3a89055, clickElement {id=07d00c35-5570-490d-a4d0-aa8962e2d4d8}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\grimm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60023}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60023/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4245e6f59799fa7afb843d76e3a89055)] -&gt; css selector: #submit]
-Session ID: 4245e6f59799fa7afb843d76e3a89055
+Command: [2b372a39bcc56a81abdcee9111fad0b4, clickElement {id=d8184817-694e-41c2-8f5c-4893e8ca05d5}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\grimm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60411}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60411/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2b372a39bcc56a81abdcee9111fad0b4)] -&gt; css selector: #submit]
+Session ID: 2b372a39bcc56a81abdcee9111fad0b4
 	at java.base@15.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@15.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base@15.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -223,7 +223,7 @@ Session ID: 4245e6f59799fa7afb843d76e3a89055
 </thead>
 <tr>
 <td class="failures">fillFormTest()</td>
-<td class="failures">12.446s</td>
+<td class="failures">11.662s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -232,28 +232,28 @@ Session ID: 4245e6f59799fa7afb843d76e3a89055
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\grimm\IdeaProjects\qa_guru_seventh_lesson2\build\downloads\1663579755481_21404_1
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\grimm\IdeaProjects\qa_guru_seventh_lesson2\build\downloads\1663580524029_27096_1
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 105.0.5195.52 (resolved driver for Chrome 105)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\grimm\.cache\selenium\chromedriver\win32\105.0.5195.52\chromedriver.exe
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 52118
+Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 60376
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-сент. 19, 2022 12:29:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+сент. 19, 2022 12:42:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-сент. 19, 2022 12:29:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 19, 2022 12:42:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
-сент. 19, 2022 12:29:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 19, 2022 12:42:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 105 of 104
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1920x1080
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=105.0.5195.125 Platform=WINDOWS
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.7.4
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.4.0 build revision: e5c75ed026a
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (4245e6f59799fa7afb843d76e3a89055)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on WINDOWS (4245e6f59799fa7afb843d76e3a89055),proxy=null,downloadsFolder=C:\Users\grimm\IdeaProjects\qa_guru_seventh_lesson2\build\downloads\1663579755481_21404_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (2b372a39bcc56a81abdcee9111fad0b4)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on WINDOWS (2b372a39bcc56a81abdcee9111fad0b4),proxy=null,downloadsFolder=C:\Users\grimm\IdeaProjects\qa_guru_seventh_lesson2\build\downloads\1663580524029_27096_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
 </pre>
 </span>
@@ -266,7 +266,7 @@ INFO: Found CDP implementation for version 105 of 104
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 19 сент. 2022 г., 12:29:29</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 19 сент. 2022 г., 12:42:16</p>
 </div>
 </div>
 </body>
