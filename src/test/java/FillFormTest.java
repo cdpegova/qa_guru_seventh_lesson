@@ -15,6 +15,10 @@ public class FillFormTest extends BaseTest {
         service.fillForm();
         service.clickButton();
         attachments.addVideo();
+        attachments.browserConsoleLogs();
+        attachments.screenshotAs("Last screenshot");
+        attachments.pageSource();
+
     }
 
 }
