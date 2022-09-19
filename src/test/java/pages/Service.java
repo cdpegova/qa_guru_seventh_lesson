@@ -1,17 +1,36 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 import com.github.javafaker.Faker;
 
+import static com.codeborne.selenide.Selenide.$;
+
 public class Service {
+
+    static SelenideElement
+            name = $("#firstName"),
+            surname = $("#lastName"),
+            emailLocators = $("#userEmail"),
+            radioButton = $("[for=gender-radio-1]"),
+            phone = $("#userNumber"),
+            picture = $("#uploadPicture"),
+            dateOfBorn = $("#dateOfBirthInput"),
+            subjectsLocators = $("#subjectsInput"),
+            hobbies = $("#hobbiesWrapper"),
+            currentAddress = $("#currentAddress"),
+            state = $("#state"),
+            city = $("#city"),
+            submitButton = $("#submit"),
+
+    thankYOu = $("#modal-title h4");
 
     Faker faker = new Faker();
 
     String firstName = faker.name().firstName();
     String lastName = faker.name().lastName();
     String email = faker.internet().emailAddress();
-    String phoneNumber = faker.phoneNumber().phoneNumber();
     String subjects = faker.pokemon().name();
 
 
@@ -29,53 +48,52 @@ public class Service {
     }
 
     public void clickButton() {
-        Locators.submitButton.click();
+        $(submitButton).click();
     }
 
     public void assertForm() {
-        Locators.thankYOu.shouldHave(Condition.text("Thanks for submitting the form"));
+        $(thankYOu).shouldHave(Condition.text("Thanks for submitting the form"));
     }
 
     private void fillName() {
-        Locators.name.setValue(firstName);
+        $(name).setValue(firstName);
     }
 
     private void fillSurname() {
-        Locators.surname.setValue(lastName);
+        $(surname).setValue(lastName);
     }
 
     private void fillEmail() {
-        Locators.email.setValue(email);
+        $(emailLocators).setValue(email);
     }
 
-    private void clickRadioButton() {
-        Locators.radioButton.click();
+    private void clickRadioButton() {$(radioButton).click();
     }
 
     private void fillPhoneNumber() {
-        Locators.phone.setValue(phoneNumber);
+        $(phone).setValue("0123456789");
     }
 
     private void fillSubjects() {
-        Locators.subjects.setValue(subjects);
+        $(subjectsLocators).setValue(subjects);
     }
 
     private void clickHobbies() {
-        Locators.hobbies.find(new ByText("Sports")).click();
+        $(hobbies).find(new ByText("Sports")).click();
     }
 
     private void fillAddress() {
-        Locators.currentAddress.setValue("Moscow");
+        $(currentAddress).setValue("Moscow");
     }
 
     private void clickState() {
-        Locators.state.click();
-        Locators.state.find(new ByText("NCR")).click();
+        $(state).click();
+        $(state).find(new ByText("NCR")).click();
     }
 
     private void clickCity() {
-        Locators.city.click();
-        Locators.city.find(new ByText("Delhi")).click();
+        $(city).click();
+        $(city).find(new ByText("Delhi")).click();
     }
 
 
