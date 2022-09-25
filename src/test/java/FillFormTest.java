@@ -10,6 +10,7 @@ public class FillFormTest extends BaseTest {
 
     @Test
     void fillFormTest() {
+        open("https://demoqa.com/automation-practice-form");
         service.fillForm();
         service.clickButton();
         attachments.addVideo();
