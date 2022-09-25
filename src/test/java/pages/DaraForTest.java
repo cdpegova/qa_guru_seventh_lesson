@@ -50,7 +50,6 @@ public class DaraForTest {
 
     @Step("Клик на ссылку")
     public void clickButton() {
-        $(submitButton).click();
     }
 
     @Step("Заполнение имени")
