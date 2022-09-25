@@ -3,7 +3,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.TestData;
+import pages.TestJenkinsData;
 
 public class BaseTest {
 
@@ -16,24 +16,24 @@ public class BaseTest {
         capabilities.setCapability("enableVideo", true);
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.baseUrl = TestData.baseUrl;
-        Configuration.browser = TestData.browserName;
-        Configuration.browserVersion = TestData.browserVersion;
-        Configuration.browserSize = TestData.browserSize;
+        Configuration.baseUrl = TestJenkinsData.baseUrl;
+        Configuration.browser = TestJenkinsData.browserName;
+        Configuration.browserVersion = TestJenkinsData.browserVersion;
+        Configuration.browserSize = TestJenkinsData.browserSize;
 
-        if (TestData.remote == null || TestData.remote.equals("")) {
+        if (TestJenkinsData.remote == null || TestJenkinsData.remote.equals("")) {
         } else {
             Configuration.remote = "https://"
-                    + TestData.LOGIN_REMOTE + ":"
-                    + TestData.PASSWORD_REMOTE + "@"
-                    + TestData.remote;
+                    + TestJenkinsData.LOGIN_REMOTE + ":"
+                    + TestJenkinsData.PASSWORD_REMOTE + "@"
+                    + TestJenkinsData.remote;
 
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
         }
 
-        if (TestData.browserVersion != null) {
-            Configuration.browserVersion = TestData.browserVersion;
+        if (TestJenkinsData.browserVersion != null) {
+            Configuration.browserVersion = TestJenkinsData.browserVersion;
         }
 
     }

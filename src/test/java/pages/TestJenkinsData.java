@@ -1,6 +1,6 @@
 package pages;
 
-public class TestData {
+public class TestJenkinsData {
 
     public static final String
             remote = System.getProperty("remote"),
