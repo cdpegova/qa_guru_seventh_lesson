@@ -1,12 +1,11 @@
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pages.Service;
+import pages.DaraForTest;
 
 import static com.codeborne.selenide.Selenide.open;
 
 public class FillFormTest extends BaseTest {
 
-    Service service = new Service();
+    DaraForTest service = new DaraForTest();
     Attachments attachments = new Attachments();
 
     @Test

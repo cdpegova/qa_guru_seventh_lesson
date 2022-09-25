@@ -1,6 +1,5 @@
 package pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 import com.github.javafaker.Faker;
@@ -8,7 +7,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class Service {
+public class DaraForTest {
 
     static SelenideElement
             name = $("#firstName"),
@@ -104,6 +103,7 @@ public class Service {
         $(city).click();
         $(city).find(new ByText("Delhi")).click();
     }
+
 
 
 }

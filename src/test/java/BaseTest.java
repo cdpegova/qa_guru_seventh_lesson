@@ -3,6 +3,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.TestData;
 
 public class BaseTest {
 
@@ -15,7 +16,25 @@ public class BaseTest {
         capabilities.setCapability("enableVideo", true);
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.baseUrl = TestData.baseUrl;
+        Configuration.browser = TestData.browserName;
+        Configuration.browserVersion = TestData.browserVersion;
+        Configuration.browserSize = TestData.browserSize;
+
+        if (TestData.remote == null || TestData.remote.equals("")) {
+        } else {
+            Configuration.remote = "https://"
+                    + TestData.LOGIN_REMOTE + ":"
+                    + TestData.PASSWORD_REMOTE + "@"
+                    + TestData.remote;
+
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+        }
+
+        if (TestData.browserVersion != null) {
+            Configuration.browserVersion = TestData.browserVersion;
+        }
+
     }
 }
